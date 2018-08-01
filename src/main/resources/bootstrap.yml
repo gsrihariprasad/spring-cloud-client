@@ -1,0 +1,13 @@
+server :
+   port : 2022
+   
+spring:
+  application:
+    name: app1
+  profiles:
+    active:
+    - default
+
+  cloud:
+    config:
+      uri: http://localhost:2021
